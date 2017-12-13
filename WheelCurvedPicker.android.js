@@ -53,7 +53,7 @@ export default class WheelCurvedPicker extends Component {
     return {selectedIndex, items, textSize, textColor}
   }
 
-  _onValueChange (e: Event) {
+  _onValueChange = (e: Event) => {
     if (this.props.onValueChange) {
       this.props.onValueChange(e.nativeEvent.data)
     }
